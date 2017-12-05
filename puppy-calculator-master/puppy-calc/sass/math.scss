@@ -1,0 +1,183 @@
+/* =Prototype Style Sheet (empty commented stylesheet)
+-----------------------------------------------------------------------------
+
+version:   1.0
+author:    Chuck Obaze
+email:     obazechuck@gmail.com
+website:   http://chuckobaze.com
+-----------------------------------------------------------------------------*/
+
+/* =Imports
+-----------------------------------------------------------------------------*/
+
+
+/* =Variables
+-----------------------------------------------------------------------------*/
+
+$border: solid 0.1em;
+$wheat-color: #f5deb3;
+$orange: #FF8C00;
+
+/* =Extensions and mixins
+-----------------------------------------------------------------------------*/
+%button-style{
+    font-family: 'Chewy', cursive;
+    padding: 0.3em 1.2em 0.3em 1.2em;
+    border-radius: 5px;
+    background-color: red;
+    border: none;
+    color: white;
+    font-size: 25px;
+    margin: 0 auto;
+    display: block;
+}
+
+%border-shadow{
+	border: solid 1px $wheat-color;
+    box-shadow: inset 0.1em 0.1em 0.1em $wheat-color;
+    -webkit-box-shadow: inset 0.1em 0.1em 0.1em $wheat-color;
+    -moz-box-shadow: inset 0.1em 0.1em 0.1em $wheat-color;
+    -ms-box-shadow: inset 0.1em 0.1em 0.1em $wheat-color;
+}
+
+body{
+	font-family: 'Chewy', cursive;
+	font-size: 10px;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+p{
+	font-size: 3em;
+	text-align: center;
+	color: $wheat-color;
+}
+
+input[type=number], input[type=text]{
+	font-size: 1em;
+    text-align: center;
+    font-family: 'Chewy', cursive;
+    color: $orange;
+    @extend %border-shadow;
+    border-radius: 0.25em;
+}
+
+div.wrapper{
+    height: auto;
+}
+
+div.container{
+    width: 100em;
+    margin: 0 auto;
+}
+
+h1.title{
+    font-family: 'Wendy One', sans-serif;
+    font-size: 10.5em;
+    color: $orange;
+    text-align: center;
+    margin: 0.5em 0 0.5em 0;
+}
+
+div.dog-imgs{
+    margin: 0 auto;
+    width: 61em;
+    margin-bottom: 4em;
+}
+
+div.dog-img1,
+div.dog-img2,
+div.dog-img3{
+    width: 20em;
+    display: inline-block;
+
+    img{
+        width: 18em;
+    }
+}
+
+div.container-wide{
+	background-color: $orange;
+	height: 45em;
+}
+
+div.container-small{
+	width: 100em;
+	margin: 0 auto;
+	height: 45em;
+
+}
+
+form#ageQuestion{
+	padding-top: 5em;
+    box-sizing: border-box;
+//     margin-bottom: 3em;
+
+	p{
+
+		label{
+			margin-right: 0.2em;
+		}
+	}
+}
+
+input#yes, input#no{
+	height: 2.5em;
+	width: 2em;
+}
+
+#dogYearSection, form#dogAgeSection{
+
+	 display: none;
+
+	p{
+		margin-bottom: 1.5em;
+
+		label{
+			margin-right: 0.5em;
+		}
+	}
+}
+
+select#dogSize{
+    width: 7.5em;
+    font-family: 'Chewy', cursive;
+    font-size: 0.8em;
+    color: $orange;
+    margin-top: 2em;
+    @extend %border-shadow;
+    border-radius: 0.25em;
+}
+
+button#enterDogYear{
+    @extend %button-style;
+    margin-top: 1em;
+    cursor: hand;
+}
+
+input#dogYear{
+	width: 6em;
+	height: 2em;
+	margin-top: 1em;
+}
+
+div#ageDisplay{
+	text-align: center;
+    font-family: 'Chewy', cursive;
+    font-size: 3em;
+    margin: 1em 0 1em 0;
+    color: $wheat-color;
+}
+
+input#dogAge{
+	width: 6em;
+	height: 2em;
+}
+
+#enterDogAge{
+    @extend %button-style;
+    cursor: hand;
+}

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+	    <meta charset="UTF-8">
+	    <title>Dog Age</title>
+	    <link href="https://fonts.googleapis.com/css?family=Chewy|Sedgwick+Ave" rel="stylesheet">
+	    <link href="https://fonts.googleapis.com/css?family=Wendy+One" rel="stylesheet">
+	    <link rel="stylesheet" href="css/style.css">
+	</head>
+	<body>
+		<div class="wrapper">
+
+			<div class="container">
+				<h1 class="title">How old is your Dog</h1>
+				<div class="dog-imgs">
+					<div class="dog-img1"><img src="imgs/dog-1.png" alt="First Doggy"></div>
+					<div class="dog-img2"><img src="imgs/dog-2.png" alt="Second Doggy"></div>
+					<div class="dog-img3"><img src="imgs/dog-3.png" alt="Third Doggy"></div>
+				</div>
+			</div>
+
+			<div class="container-wide">
+				<div class="container-small">
+						<form id="ageQuestion">
+							<p>
+								<label>Do you know when your dog was born?</label>
+								<input type="radio" name="answer" id="yes" value="yes"> YES
+								<input type="radio" name="answer" id="no" value="no"> NO
+							</p>
+						</form>
+
+					<form id="dogYearSection">
+						<p>
+							<label>Please Input Your Dog's Date Of Birth. <i>(Year Only)</i></label>
+							<input type="number" name="dogYear" id="dogYear" max="2017" min="1897">
+							<br>
+<!-- 							<label>Select Dog Size</label> -->
+<!--
+							<select name="dogSize" id="dogSize">
+							    <option value="small">20 Ibs. or Less</option>
+							    <option value="medium">21 Ibs. to 51 Ibs.</option>
+							    <option value="big">More than 50 Ibs.</option>
+							</select>
+-->
+						</p>
+						<button type="button" id="enterDogYear">Enter</button>
+						<div id="ageDisplay"></div>
+					</form>
+
+					<form id="dogAgeSection">
+						<p>
+							<label>Please Input Dog's Age</label>
+							<input type="number" name="dogAge" id="dogAge" max="16" min="1">
+							<br>
+<!-- 							<label>Select Dog Size</label> -->
+<!--
+							<select name="dogSize" id="dogSize">
+							    <option value="small">20 Ibs. or Less</option>
+							    <option value="medium">21 Ibs. to 51 Ibs.</option>
+							    <option value="big">More than 50 Ibs.</option>
+							</select>
+-->
+						</p>
+						<button type="button" id="enterDogAge">Enter</button>
+					</form>
+
+				</div>
+			</div>
+		</div>
+		<script src="js/script.js"></script>
+	</body>
+</html>

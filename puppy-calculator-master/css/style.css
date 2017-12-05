@@ -1,0 +1,179 @@
+/* =Prototype Style Sheet (empty commented stylesheet)
+-----------------------------------------------------------------------------
+
+version:   1.0
+author:    Chuck Obaze
+email:     obazechuck@gmail.com
+website:   http://chuckobaze.com
+-----------------------------------------------------------------------------*/
+/* =Imports
+-----------------------------------------------------------------------------*/
+/* =Variables
+-----------------------------------------------------------------------------*/
+/* =Extensions and mixins
+-----------------------------------------------------------------------------*/
+/* line 23, /Users/chuckobazemac/Documents/puppy-calculator/sass/style.scss */
+button#enterDogYear, #enterDogAge {
+  font-family: 'Chewy', cursive;
+  padding: 0.3em 1.2em 0.3em 1.2em;
+  border-radius: 5px;
+  background-color: red;
+  border: none;
+  color: white;
+  font-size: 25px;
+  margin: 0 auto;
+  display: block;
+}
+
+/* line 35, /Users/chuckobazemac/Documents/puppy-calculator/sass/style.scss */
+input[type=number], input[type=text], select#dogSize {
+  border: solid 1px #f5deb3;
+  box-shadow: inset 0.1em 0.1em 0.1em #f5deb3;
+  -webkit-box-shadow: inset 0.1em 0.1em 0.1em #f5deb3;
+  -moz-box-shadow: inset 0.1em 0.1em 0.1em #f5deb3;
+  -ms-box-shadow: inset 0.1em 0.1em 0.1em #f5deb3;
+}
+
+/* line 43, /Users/chuckobazemac/Documents/puppy-calculator/sass/style.scss */
+body {
+  font-family: 'Chewy', cursive;
+  font-size: 10px;
+}
+
+/* line 48, /Users/chuckobazemac/Documents/puppy-calculator/sass/style.scss */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 53, /Users/chuckobazemac/Documents/puppy-calculator/sass/style.scss */
+p {
+  font-size: 3em;
+  text-align: center;
+  color: #f5deb3;
+}
+
+/* line 59, /Users/chuckobazemac/Documents/puppy-calculator/sass/style.scss */
+input[type=number], input[type=text] {
+  font-size: 1em;
+  text-align: center;
+  font-family: 'Chewy', cursive;
+  color: #FF8C00;
+  border-radius: 0.25em;
+}
+
+/* line 68, /Users/chuckobazemac/Documents/puppy-calculator/sass/style.scss */
+div.wrapper {
+  height: auto;
+}
+
+/* line 72, /Users/chuckobazemac/Documents/puppy-calculator/sass/style.scss */
+div.container {
+  width: 100em;
+  margin: 0 auto;
+}
+
+/* line 77, /Users/chuckobazemac/Documents/puppy-calculator/sass/style.scss */
+h1.title {
+  font-family: 'Wendy One', sans-serif;
+  font-size: 8.3em;
+  color: #FF8C00;
+  text-align: center;
+  margin: 0.5em 0 0.5em 0;
+}
+
+/* line 85, /Users/chuckobazemac/Documents/puppy-calculator/sass/style.scss */
+div.dog-imgs {
+  margin: 0 auto;
+  width: 61em;
+  margin-bottom: 4em;
+}
+
+/* line 91, /Users/chuckobazemac/Documents/puppy-calculator/sass/style.scss */
+div.dog-img1,
+div.dog-img2,
+div.dog-img3 {
+  width: 20em;
+  display: inline-block;
+}
+
+/* line 97, /Users/chuckobazemac/Documents/puppy-calculator/sass/style.scss */
+div.dog-img1 img,
+div.dog-img2 img,
+div.dog-img3 img {
+  width: 18em;
+}
+
+/* line 102, /Users/chuckobazemac/Documents/puppy-calculator/sass/style.scss */
+div.container-wide {
+  background-color: #FF8C00;
+  height: 40.2em;
+}
+
+/* line 107, /Users/chuckobazemac/Documents/puppy-calculator/sass/style.scss */
+div.container-small {
+  width: 100em;
+  margin: 0 auto;
+  height: 40.2em;
+}
+
+/* line 114, /Users/chuckobazemac/Documents/puppy-calculator/sass/style.scss */
+form#dogYearSection {
+  padding-top: 10em;
+  box-sizing: border-box;
+}
+
+/* line 119, /Users/chuckobazemac/Documents/puppy-calculator/sass/style.scss */
+form#dogYearSection p {
+  margin-bottom: 1.5em;
+}
+
+/* line 122, /Users/chuckobazemac/Documents/puppy-calculator/sass/style.scss */
+form#dogYearSection p label {
+  margin-right: 0.5em;
+}
+
+/* line 128, /Users/chuckobazemac/Documents/puppy-calculator/sass/style.scss */
+select#dogSize {
+  width: 7.5em;
+  font-family: 'Chewy', cursive;
+  font-size: 0.8em;
+  color: #FF8C00;
+  margin-top: 2em;
+  border-radius: 0.25em;
+}
+
+/* line 138, /Users/chuckobazemac/Documents/puppy-calculator/sass/style.scss */
+button#enterDogYear {
+  margin-top: 1em;
+  cursor: hand;
+}
+
+/* line 144, /Users/chuckobazemac/Documents/puppy-calculator/sass/style.scss */
+input#dogYear {
+  width: 6em;
+  height: 2em;
+  margin-top: 1em;
+}
+
+/* line 150, /Users/chuckobazemac/Documents/puppy-calculator/sass/style.scss */
+div#ageDisplay {
+  text-align: center;
+  font-family: 'Chewy', cursive;
+  font-size: 3em;
+  margin: 1em 0 1em 0;
+  color: #f5deb3;
+}
+
+/* line 158, /Users/chuckobazemac/Documents/puppy-calculator/sass/style.scss */
+input#dogAge {
+  width: 6em;
+  height: 2em;
+}
+
+/* line 163, /Users/chuckobazemac/Documents/puppy-calculator/sass/style.scss */
+#enterDogAge {
+  cursor: hand;
+}
+
+/*# sourceMappingURL=../css/style.map */

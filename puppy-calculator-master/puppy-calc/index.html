@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Perimeter of a Square</title>
+</head>
+<body>
+    <h1>Perimeter of a Rectangle</h1>
+    <form>
+        <label>Quickly find the perimeter of a rectangle using the form below</label>
+        <br>
+        <br>
+        <p>P = 2 x ( <input placeholder="Input Length Here" type="number" name="length" id="length"> + <input placeholder="Input Width Here" type="number" name="width" id="width"> )</p>
+        <br>
+        <button id="submitButton" type="button">Submit</button>
+    </form>
+    
+    <p id="answer"></p>
+
+    <script>
+        function myFunction(){
+            var length = document.getElementById('length').value;
+            var width = document.getElementById('width').value;
+            var result = parseInt(length) + parseInt(width);
+            var final = 2 * result;
+            var outPutText = document.getElementById("answer").innerHTML = "The Permimeter of The Rectangle with the specified length and width is: " + final;
+        };
+        var getButton = document.getElementById('submitButton');
+        getButton.addEventListener("click", myFunction);
+    </script>
+    
+</body>
+</html>

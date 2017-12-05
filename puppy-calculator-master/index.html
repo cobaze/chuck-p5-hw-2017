@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+	    <meta charset="UTF-8">
+	    <title>Dog Age</title>
+	    <link href="https://fonts.googleapis.com/css?family=Chewy|Sedgwick+Ave" rel="stylesheet">
+	    <link href="https://fonts.googleapis.com/css?family=Wendy+One" rel="stylesheet">
+	    <link rel="stylesheet" href="css/style.css">
+	</head>
+	<body>
+		<div class="wrapper">
+			
+			<div class="container">
+				<h1 class="title">How old is your Dog In Human Years</h1>
+				<div class="dog-imgs">
+					<div class="dog-img1"><img src="imgs/dog-1.png" alt="First Doggy"></div>
+					<div class="dog-img2"><img src="imgs/dog-2.png" alt="Second Doggy"></div>
+					<div class="dog-img3"><img src="imgs/dog-3.png" alt="Third Doggy"></div>
+				</div>
+			</div>
+			
+			<div class="container-wide">
+				<div class="container-small">
+					
+					<form id="dogYearSection">
+						<p>
+							<label>Please Input Your Dog's Age. <i>(Whole Numbers Only)</i></label>
+							<input type="number" name="dogYear" id="dogYear" max="16" min="1">
+						</p>
+						<button type="button" id="enterDogYear">Enter</button>
+						<div id="ageDisplay"></div>
+					</form>
+
+				</div>
+			</div> 
+		</div>
+		<script src="js/script.js"></script>
+	</body>
+</html>
