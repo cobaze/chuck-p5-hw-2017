@@ -30,14 +30,15 @@ function setup(){
     buildings = loadImage("images/buildings.png");
     brick = loadImage("images/brick.png");
     cloud = loadImage("images/cloud.png");
-    slider = createSlider(0, 255, 255);
+    slider = createSlider(0, 255, 0);
     slider.position(830, 100);
 }
 
 function draw(){
-    
+    var sliderMap = map(slider.value(), 0,255, 255,0);
+    console.log("sliderMap: " + sliderMap);
     noStroke();
-    
+    tint(255);
     background(bg);
     tint(255, 255)
     image(waves, waveX - 50 * 1.5, 280 + rise); //back wave
@@ -96,7 +97,7 @@ function draw(){
     
 //    fill(255,255,255,slider.value());
 //    rect(20, 100, 800,20);
-    tint(slider.value());
+    tint(sliderMap);
     image(cloud, 0, 0);
     
     if(slider.value() < 200){
@@ -111,16 +112,24 @@ function draw(){
 
 function mousePressed(){
     
-//    if(showButton[0].displayButton() == true){
-//        console.log("Works");
-////         block++;
-//    }
-//    
-//    if(showButton[1].displayButton() == true){
-////        block--;
-//        console.log("Works Too");
-//    }
-    block++;
+    if(showButton[0].checkButton() == true){
+        console.log("Works");
+         block++;
+        
+        if(block >= 10){
+           block = 10;
+           }
+    }
+    
+    if(showButton[1].checkButton() == true){
+        block--;
+        console.log("Works Too");
+        if(block <= -1){
+           block = 0;
+           }
+    }
+//    block++;
+    console.log(block);
 }
 
 function nextButton(buttonX, buttonY, buttonSize, buttonColor){
